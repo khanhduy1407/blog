@@ -84,10 +84,10 @@ extra:
       link: https://www.youtube.com/c/DyGamerYT
   alternate:
     - name: English
-      link: /
+      link: ./
       lang: en
     - name: Tiếng Việt
-      link: /vi/
+      link: ./vi/
       lang: vi
 
 # Extensions
