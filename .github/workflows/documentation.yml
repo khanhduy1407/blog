@@ -39,10 +39,10 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install \
-            "cairosvg>=2.5" \
-            "docums-minify-plugin>=0.5.0" \
-            "docums-redirects>=1.0.0" \
-            "pillow<10"
+            "docums" \
+            "docurial" \
+            "docums-minify-plugin" \
+            "docums-redirects"
 
       - name: Deploy documentation
         env:
