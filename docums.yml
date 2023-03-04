@@ -82,13 +82,6 @@ extra:
       link: https://www.instagram.com/dygameryt
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/DyGamerYT
-  alternate:
-    - name: English
-      link: ./
-      lang: en
-    - name: Tiếng Việt
-      link: ./vi/
-      lang: vi
 
 # Extensions
 markdown_extensions:
