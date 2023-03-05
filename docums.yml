@@ -7,7 +7,7 @@ site_description: >-
 
 # Repository
 repo_name: khanhduy1407
-repo_url: https://github.com/khanhduy1407/blog/
+repo_url: https://github.com/khanhduy1407
 edit_uri: ""
 
 # Copyright
@@ -49,13 +49,13 @@ theme:
       primary: light blue
       accent: light blue
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       primary: light blue
       accent: light blue
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to light mode
   font:
     text: Arial
