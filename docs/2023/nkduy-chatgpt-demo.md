@@ -51,6 +51,29 @@ in the account before it expires.
 Especially, __NKDuy ChatGPT__ will answer your questions faster than
 OpenAI's ChatGPT.
 
+## For Developers
+
+### Run Locally
+
+1. Clone the repo
+    ```shell
+   git clone https://github.com/khanhduy1407/chatgpt
+   cd chatgpt
+    ```
+2. Setup & Install dependencies
+    ```shell
+    npm i
+    ```
+3. Make a copy of `.env.example`, then rename it to `.env`
+4. Add your [OpenAI API key](https://platform.openai.com/account/api-keys) to `.env`
+    ```
+    OPENAI_API_KEY=sk-xxx...
+    ```
+5. Run the app
+    ```shell
+    npm run dev
+    ```
+
 ## Other links
 
 - Website: https://nkduy-chatgpt.vercel.app/
