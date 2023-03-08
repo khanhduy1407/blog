@@ -128,5 +128,5 @@ markdown_extensions:
 nav:
   - Blog:
     - index.md
-    - 2021:
-        - 2021/blog-test.md
+    - 2023:
+        - 2023/nkduy-chatgpt-demo.md
