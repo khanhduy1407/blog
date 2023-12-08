@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const { Feed } = require('feed')
 const { load } = require('./posts.data')
-const url = `https://khanhduy1407.github.io`
+const url = `https://khanhduy1407.github.io/blog`
 
 const feed = new Feed({
   title: 'NKDuy Blog',
