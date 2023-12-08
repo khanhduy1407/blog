@@ -1,0 +1,42 @@
+<template>
+  <div class="antialiased">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <nav class="flex justify-between items-center pt-10 pb-2 font-bold">
+        <a class="text-xl" href="/" aria-label="NKDuy Blog">
+          <img
+            class="inline-block mr-2"
+            style="width: 50px"
+            alt="logo"
+            src="https://github.com/khanhduy1407.png"
+          />
+          <span k-if="!isIndex" class="hidden md:inline">NKDuy Blog</span>
+        </a>
+        <div class="text-sm text-gray-500 leading-5">
+          <a
+            class="hover:text-gray-700"
+            href="https://github.com/khanhduy1407/blog"
+            target="_blank"
+            rel="noopener"
+            >Repo</a
+          >
+          <span class="mr-2 ml-2">·</span>
+          <a class="hover:text-gray-700" href="/feed.rss">RSS<span class="hidden sm:inline"> Feed</span></a>
+        </div>
+      </nav>
+    </div>
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <Home k-if="isIndex" />
+      <Article k-else />
+    </main>
+  </div>
+</template>
+
+<script setup>
+import { computed } from 'kdu'
+import { useRoute } from 'witepress'
+import Home from './Home.kdu'
+import Article from './Article.kdu'
+
+const route = useRoute()
+const isIndex = computed(() => route.path.replace(/index.html$/, '') === '/')
+</script>

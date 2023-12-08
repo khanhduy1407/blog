@@ -1,0 +1,21 @@
+import { defineConfig } from 'witepress'
+
+export default defineConfig({
+  title: 'NKDuy Blog',
+  description: 'The offical blog for the NKDuy project',
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }
+    ]
+  ],
+  wite: {
+    build: {
+      minify: 'terser'
+    }
+  }
+})

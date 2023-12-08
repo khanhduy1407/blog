@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "witepress",
+    "build": "witepress build",
+    "serve": "witepress serve",
+    "genfeed": "node ./.witepress/genFeed",
+    "deploy": "bash ./scripts/deploy.sh"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "0.5.0",
+    "feed": "4.2.1",
+    "gray-matter": "4.0.2",
+    "witepress": "0.22.4"
+  },
+  "dependencies": {
+    "tailwindcss": "3.0.2"
+  }
+}
