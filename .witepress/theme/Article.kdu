@@ -10,19 +10,28 @@ const { frontmatter: data } = useData()
 const route = useRoute()
 
 function findCurrentIndex() {
-  return posts.findIndex(async (p) => await p.href === route.path)
+  return posts.findIndex((p) => p.href === route.path)
+}
+
+const currentIndex = findCurrentIndex()
+
+// Kiểm tra xem có tồn tại bài viết tương ứng không
+if (currentIndex !== -1) {
+  console.info("Current index:", currentIndex)
+  // console.info("Published on:", posts[currentIndex].date)
 }
 
 // use the customData date which contains pre-resolved date info
-const date = computed(() => posts[findCurrentIndex()].date)
-const nextPost = computed(() => posts[findCurrentIndex() - 1])
-const prevPost = computed(() => posts[findCurrentIndex() + 1])
+// const date = computed(() => posts[findCurrentIndex()].date)
+const nextPost = computed(() => currentIndex !== -1 && posts[currentIndex - 1])
+const prevPost = computed(() => currentIndex !== -1 && posts[currentIndex + 1])
 </script>
 
 <template>
   <article class="xl:divide-y xl:divide-gray-200">
     <header class="pt-6 xl:pb-10 space-y-1 text-center">
-      <Date :date="date" />
+      <Date k-if="currentIndex !== -1" :date="posts[currentIndex].date" />
+      
       <h1
         class="
           text-3xl
@@ -98,7 +107,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           </div>
         </div>
         <div class="pt-8">
-          <a class="link" href="/">← Back to the blog</a>
+          <a class="link" href="/blog/">← Back to the blog</a>
         </div>
       </footer>
     </div>
