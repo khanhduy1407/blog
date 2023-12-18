@@ -6,6 +6,8 @@ export default defineConfig({
   title: 'NKDuy Blog',
   description: 'The offical blog for the NKDuy project',
 
+  cleanUrls: true,
+
   head: [
     [
       'link',
