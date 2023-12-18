@@ -7,19 +7,19 @@ import { load } from './theme/posts.data.js'
 const url = `https://khanhduy1407.github.io/blog`
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const feed = new Feed({
-  title: 'NKDuy Blog',
-  description: 'The official blog for the NKDuy project',
-  id: url,
-  link: url,
-  language: 'en',
-  image: 'https://github.com/khanhduy1407.png',
-  favicon: `${url}/favicon.ico`,
-  copyright: 'Copyright (c) 2019-present, NKDuy'
-})
+export async function genFeed() {
+  const feed = new Feed({
+    title: 'NKDuy Blog',
+    description: 'The official blog for the NKDuy project',
+    id: url,
+    link: url,
+    language: 'en',
+    image: 'https://github.com/khanhduy1407.png',
+    favicon: `${url}/favicon.ico`,
+    copyright: 'Copyright (c) 2019-present, NKDuy'
+  })
 
-load(true).then((posts) => {
-  posts.forEach((post) => {
+  for (const post of await load(true)) {
     const file = path.resolve(dirname, `dist${post.href}.html`)
     const rendered = readFileSync(file, 'utf-8')
     const content = rendered.match(
@@ -46,7 +46,7 @@ load(true).then((posts) => {
       ],
       date: post.data.date
     })
-  })
+  }
 
   writeFileSync(path.resolve(dirname, 'dist/feed.rss'), feed.rss2())
-})
+}

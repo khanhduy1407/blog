@@ -1,4 +1,5 @@
 import { defineConfig } from 'witepress'
+import { genFeed } from './genFeed.js'
 
 export default defineConfig({
   base: '/blog/',
@@ -17,5 +18,7 @@ export default defineConfig({
         href: '/favicon.ico'
       }
     ]
-  ]
+  ],
+
+  buildEnd: genFeed
 })
