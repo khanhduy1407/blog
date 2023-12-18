@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "witepress",
+    "dev": "witepress --open",
     "build": "witepress build",
     "serve": "witepress serve"
   },
