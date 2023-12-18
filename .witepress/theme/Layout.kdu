@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'kdu'
 import { useData } from 'witepress'
 import Home from './Home.kdu'
 import Article from './Article.kdu'
