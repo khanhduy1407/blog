@@ -18,7 +18,7 @@ export default defineConfig({
         href: '/favicon.ico'
       }
     ]
-  ],
+  ]
 
-  buildEnd: genFeed
+  // buildEnd: genFeed
 })
