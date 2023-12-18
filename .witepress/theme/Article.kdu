@@ -1,9 +1,9 @@
-<script setup>
+<script setup lang="ts">
 import Date from './Date.kdu'
 import Author from './Author.kdu'
 import { computed } from 'kdu'
 import { useData, useRoute } from 'witepress'
-import { data as posts } from '../posts.data'
+import { data as posts } from './posts.data.js'
 
 const { frontmatter: data } = useData()
 

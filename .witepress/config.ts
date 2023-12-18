@@ -15,11 +15,5 @@ export default defineConfig({
         href: '/favicon.ico'
       }
     ]
-  ],
-
-  wite: {
-    build: {
-      // minify: 'terser'
-    }
-  }
+  ]
 })

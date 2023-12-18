@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { computed } from 'kdu'
 import { useRoute } from 'witepress'
 import Home from './Home.kdu'

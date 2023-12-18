@@ -7,16 +7,18 @@
     "dev": "witepress",
     "build": "witepress build",
     "serve": "witepress serve",
-    "genfeed": "node ./.witepress/genFeed"
+    "genfeed": "tsx ./.witepress/genFeed"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^18.7.13",
     "feed": "4.2.1",
     "gray-matter": "4.0.2",
+    "kdu": "^3.2.48",
+    "tailwindcss": "^3.1.8",
+    "tsx": "^3.8.2",
     "witepress": "1.0.0-alpha.77"
-  },
-  "dependencies": {
-    "tailwindcss": "^3.1.8"
   },
   "packageManager": "pnpm@8.11.0"
 }
