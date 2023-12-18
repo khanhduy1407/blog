@@ -2,8 +2,10 @@ import { defineConfig } from 'witepress'
 
 export default defineConfig({
   base: '/blog/',
+
   title: 'NKDuy Blog',
   description: 'The offical blog for the NKDuy project',
+
   head: [
     [
       'link',
@@ -14,9 +16,10 @@ export default defineConfig({
       }
     ]
   ],
+
   wite: {
     build: {
-      minify: 'terser'
+      // minify: 'terser'
     }
   }
 })

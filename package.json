@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "witepress",
     "build": "witepress build",
@@ -10,13 +11,13 @@
     "deploy": "bash ./scripts/deploy.sh"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "0.5.0",
+    "@tailwindcss/typography": "^0.5.4",
     "feed": "4.2.1",
     "gray-matter": "4.0.2",
-    "witepress": "0.22.4"
+    "witepress": "1.0.0-alpha.77"
   },
   "dependencies": {
-    "tailwindcss": "3.0.2"
+    "tailwindcss": "^3.1.8"
   },
   "packageManager": "pnpm@8.11.0"
 }

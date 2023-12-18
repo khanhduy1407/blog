@@ -1,0 +1,13 @@
+{
+  "hash": "e2f7dbf7",
+  "browserHash": "4ed19a06",
+  "optimized": {
+    "kdu": {
+      "src": "../../../node_modules/.pnpm/kdu@3.3.4/node_modules/kdu/dist/kdu.runtime.esm-bundler.js",
+      "file": "kdu.js",
+      "fileHash": "ac1f7d9e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}
