@@ -38,8 +38,8 @@ export async function genFeed(config: SiteConfig) {
       author: [
         {
           name: frontmatter.author,
-          link: frontmatter.twitter
-            ? `https://twitter.com/${frontmatter.twitter}`
+          link: frontmatter.github
+            ? `https://github.com/${frontmatter.github}`
             : undefined
         }
       ],
