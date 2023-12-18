@@ -7,8 +7,7 @@
     "dev": "witepress",
     "build": "witepress build",
     "serve": "witepress serve",
-    "genfeed": "node ./.witepress/genFeed",
-    "deploy": "bash ./scripts/deploy.sh"
+    "genfeed": "node ./.witepress/genFeed"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
