@@ -39,24 +39,6 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         class="divide-y divide-gray-200 dark:divide-slate-200/5 xl:pb-0 xl:col-span-3 xl:row-span-2"
       >
         <Content class="prose dark:prose-invert max-w-none pt-10 pb-8" />
-
-        <component
-          is="script"
-          src="https://giscus.app/client.js"
-          data-repo="khanhduy1407/blog"
-          data-repo-id="R_kgDOJFUUHA"
-          data-category="Comment"
-          data-category-id="DIC_kwDOJFUUHM4CblHE"
-          data-mapping="url"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="1"
-          data-input-position="top"
-          data-theme="preferred_color_scheme"
-          data-lang="en"
-          data-loading="lazy"
-          crossorigin="anonymous"
-          async></component>
       </div>
 
       <footer
@@ -86,6 +68,24 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           <a class="link" href="/blog/">← Back to the blog</a>
         </div>
       </footer>
+
+      <component
+          is="script"
+          src="https://giscus.app/client.js"
+          data-repo="khanhduy1407/blog"
+          data-repo-id="R_kgDOJFUUHA"
+          data-category="Comment"
+          data-category-id="DIC_kwDOJFUUHM4CblHE"
+          data-mapping="url"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="1"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async></component>
     </div>
   </article>
 </template>
