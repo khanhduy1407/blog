@@ -5,7 +5,7 @@ const { frontmatter } = useData()
 </script>
 
 <template>
-  <dl class="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200">
+  <dl class="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 dark:xl:border-slate-200/5">
     <dt class="sr-only">Authors</dt>
     <dd>
       <ul
@@ -26,15 +26,38 @@ const { frontmatter } = useData()
           />
           <dl class="text-sm font-medium leading-5 whitespace-nowrap">
             <dt class="sr-only">Name</dt>
-            <dd class="text-gray-900">{{ frontmatter.author }}</dd>
+            <dd class="text-gray-900 dark:text-white">{{ frontmatter.author }}</dd>
             <dt k-if="frontmatter.twitter" class="sr-only">Twitter</dt>
             <dd k-if="frontmatter.twitter">
+              <span class="dark:text-white">Twitter: </span>
               <a
                 :href="'https://twitter.com/' + frontmatter.twitter"
                 target="_blank"
                 rel="noopnener noreferrer"
                 class="link"
                 >{{ frontmatter.twitter }}</a
+              >
+            </dd>
+            <dt k-if="frontmatter.facebook" class="sr-only">Facebook</dt>
+            <dd k-if="frontmatter.facebook">
+              <span class="dark:text-white">Facebook: </span>
+              <a
+                :href="'https://www.facebook.com/' + frontmatter.facebook"
+                target="_blank"
+                rel="noopnener noreferrer"
+                class="link"
+                >@{{ frontmatter.facebook }}</a
+              >
+            </dd>
+            <dt k-if="frontmatter.github" class="sr-only">Github</dt>
+            <dd k-if="frontmatter.github">
+              <span class="dark:text-white">Github: </span>
+              <a
+                :href="'https://github.com/' + frontmatter.github"
+                target="_blank"
+                rel="noopnener noreferrer"
+                class="link"
+                >@{{ frontmatter.github }}</a
               >
             </dd>
           </dl>

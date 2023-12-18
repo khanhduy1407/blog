@@ -4,6 +4,8 @@ date: 2020-07-11
 author: NKDuy
 gravatar: bd037185b042fdcaf1f6b701935b4baaf690d728c2c6f77b067bdcb96504ff93
 twitter: ''
+facebook: 'khanhduy1407'
+github: 'khanhduy1407'
 ---
 
 Hi there, my name is NKDuy. I'm from Vietnam. I joined this IT community in 2020, the 2nd semester of 11th grade. By the time I went to college (in 2021), I had started to like open source ❤️.
