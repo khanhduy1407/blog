@@ -86,7 +86,7 @@ My favorite programming languages are JavaScript/TypeScript and Java.
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=khanhduy1407&bg_color=0d1117&color=5bcdec&line=5bcdec&point=ffffff&area=true&hide_border=true" />
 </a>
 
-## 🎊 Follow me
+## 🎊 Connect me
 
 - Email: nkduy.dev@gmail.com (or kn145660@gmail.com)
 - Facebook: https://www.facebook.com/khanhduy1407
