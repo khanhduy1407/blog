@@ -9,7 +9,7 @@ github: 'khanhduy1407'
 ---
 
 <p align="center">
-  <img width="150" src="/assets/kdu-3-2-lion.png" alt="one-piece-logo">
+  <img width="150" src="https://github.com/khanhduy1407/blog/assets/68154054/dc4bd6ab-499f-4960-816b-2a7aadde4dae" alt="kdu-3-2-lion">
 </p>
 
 We are excited to announce the release of Kdu.js v3.2 "Lion"! This release includes many significant new features and performance improvements, and contains no breaking changes.

@@ -9,7 +9,7 @@ github: 'khanhduy1407'
 ---
 
 <p align="center">
-  <img width="150" src="/assets/kdu-3-monkey.png" alt="one-piece-logo">
+  <img width="150" src="https://github.com/khanhduy1407/blog/assets/68154054/6a479d74-971c-40fb-80ce-848c5ca7f7ef" alt="kdu-3-monkey">
 </p>
 
 Today we are proud to announce the official release of Kdu.js v3.0 "Monkey". This new major version of the framework provides improved performance, smaller bundle sizes, better TypeScript integration, new APIs for tackling large scale use cases, and a solid foundation for long-term future iterations of the framework.
