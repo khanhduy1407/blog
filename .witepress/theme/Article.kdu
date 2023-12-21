@@ -36,7 +36,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
     >
       <Author />
       <div
-        class="divide-y divide-gray-200 dark:divide-slate-200/5 xl:pb-0 xl:col-span-3 xl:row-span-2"
+        class="divide-y divide-gray-200 dark:divide-slate-200/5 xl:pb-0 xl:col-span-3 xl:row-span-2 pb-8"
       >
         <Content class="prose dark:prose-invert max-w-none pt-10 pb-8" />
 
