@@ -48,7 +48,7 @@ Kdu v3's codebase is written in TypeScript, with automatically generated, tested
 
 ### Experimental Features
 
-We have proposed two new features for Singe-File Components (SFC, aka `.kdu` files):
+We have proposed two new features for Singe-File Components (SFC, aka `*.kdu` files):
 
 - `<script setup>`: syntactic sugar for using Composition API inside SFCs.
 - `<style vars>`: state-driven CSS variables inside SFCs.
